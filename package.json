@@ -1,6 +1,6 @@
 {
   "name": "erdl-guard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Deterministic authorization for AI agent tool calls, powered by the ERDL engine.",
   "type": "module",
   "main": "./dist/index.js",
