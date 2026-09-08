@@ -5,6 +5,8 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 [![Formally Verified](https://img.shields.io/badge/formally%20verified-Z3%20SMT-success.svg)](https://github.com/OpenOBA/erdl-formal)
 
+[English](https://github.com/OpenOBA/erdl-guard/blob/master/README.md) · [中文](https://github.com/OpenOBA/erdl-guard/blob/master/README.zh-CN.md)
+
 ERDL Guard 位于 Agent 与它能执行的工具之间。它在**你的 handler 运行之前**，对"工具名 + 参数"做确定性的 ERDL 策略求值，然后放行、拒绝、纠正、上报、或转人工审批。**它管的是工具调用，不是 prompt。**
 
 与"用 LLM 过滤 LLM"的概率式 guardrail 不同，ERDL Guard 是**确定性的**：相同的工具调用 → 永远相同的决策，且每个决策都附带一份可离线独立核验的**防篡改凭证（Receipt）**。
