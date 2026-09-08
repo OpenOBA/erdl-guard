@@ -4,6 +4,8 @@
 > deterministically, in 5 lines of code.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![npm version](https://img.shields.io/npm/v/erdl-guard.svg)](https://www.npmjs.com/package/erdl-guard)
+[![npm downloads](https://img.shields.io/npm/dw/erdl-guard.svg)](https://www.npmjs.com/package/erdl-guard)
 [![Formally Verified](https://img.shields.io/badge/formally%20verified-Z3%20SMT-success.svg)](https://github.com/OpenOBA/erdl-formal)
 
 [English](https://github.com/OpenOBA/erdl-guard/blob/master/README.md) · [中文](https://github.com/OpenOBA/erdl-guard/blob/master/README.zh-CN.md)
