@@ -1,0 +1,14 @@
+services:
+  erdl-guard:
+    build: .
+    ports:
+      - "3001:3001"
+    command: ["http://upstream:9001", "3001"]
+    volumes:
+      - ./erdl:/app/erdl
+
+  # Replace with your actual MCP server.
+  upstream:
+    image: your-mcp-server:latest
+    ports:
+      - "9001:9001"

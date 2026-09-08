@@ -1,0 +1,47 @@
+{
+  "name": "erdl-guard",
+  "version": "0.1.0",
+  "description": "Deterministic authorization for AI agent tool calls, powered by the ERDL engine.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "erdl-guard": "./dist/cli.js"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "demo": "node examples/demo.mjs"
+  },
+  "keywords": [
+    "erdl",
+    "agent",
+    "authorization",
+    "guard",
+    "deterministic",
+    "mcp",
+    "security"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@openoba/rulsynor-core": "1.1.0",
+    "json-canonicalize": "^1.0.0",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@langchain/core": "^1.2.9",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^26.0.0",
+    "ai": "^7.0.93",
+    "langchain": "^1.5.10",
+    "typescript": "^5.9.0",
+    "vitest": "^3.0.0",
+    "zod": "^4.5.4"
+  }
+}

@@ -1,0 +1,23 @@
+protocol: "erdl/v2"
+version: "2.1.0"
+metadata:
+  name: "erdl-guard"
+  description: "Default ERDL Guard rules"
+  category: security
+rules:
+  - name: "SEC-001-block-rm-rf"
+    description: "Block destructive rm -rf in bash"
+    category: security
+    priority: 10
+    ring: 0
+    when:
+      logic: AND
+      conditions:
+        - field: "tool.name"
+          operator: eq
+          value: "bash"
+        - field: "tool.args.command"
+          operator: contains
+          value: "rm -rf"
+    then: DENY
+    message: "Destructive command blocked"
