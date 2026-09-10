@@ -126,8 +126,9 @@ erdl-guard receipts verify <file.json>   # verify a receipt's hash chain offline
   forensic — compliance-friendly.
 - **Every decision is logged.** ALLOW / DENY / correct / escalate / human-review each carry an
   immutable receipt, satisfying 等保 / SOX / HIPAA / financial-audit retention requirements.
-- **Vector-level verifiable.** 317 core vectors (78 audit-layer + 239 expression-layer); the 78
-  audit-layer vectors are byte-verified by two independent third-party runners (Go, Python).
+- **Vector-level verifiable.** 318 core vectors (78 audit-layer + 240 expression-layer); the 78
+  audit-layer vectors are byte-verified by two independent third-party runners (Go, Python), and
+  the 240 expression-layer vectors by concordia-python-expression (Python).
 
 ---
 
