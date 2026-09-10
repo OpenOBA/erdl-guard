@@ -1,6 +1,6 @@
 {
   "name": "erdl-guard",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Deterministic authorization for AI agent tool calls, powered by the ERDL engine.",
   "type": "module",
   "main": "./dist/index.js",
@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@openoba/rulsynor-core": "1.2.0",
+    "@openoba/rulsynor-core": "1.2.2",
     "json-canonicalize": "^1.0.0",
     "js-yaml": "^4.1.0"
   },
